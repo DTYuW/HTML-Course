@@ -1,0 +1,137 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+p{
+    border: 5px solid gray;
+}
+
+.container{
+    display: flex;
+    background-color: #004466;
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+}
+.item{
+    width: 100px;
+    background-color: #00ffa2;
+    color: #004466;
+    font-size: 36px;
+    text-align: center;
+    margin: 10px;
+}
+
+.container2{
+    display: flex;
+    background-color: #004466;
+    width: 500px;
+    margin: auto;
+}
+.item0{
+    background-color: #00ffa2;
+    color: #004466;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.item1{
+    width: 150px;
+    height: 150px;
+}
+.item2{
+    height: 200px;
+}
+.item3{
+    width: 400px;
+}
+
+.container3{
+    display: flex;
+    background-color: #004466;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    padding: 20px;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.item01{
+    width: 100px;
+    background-color: #00ffa2;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #004466;
+    font-size: 36px;
+    text-align: center;
+}
+
+.menu{
+    display: flex;
+    width: 600px;
+    margin: 0 auto;
+    /* 寬度超出了設定值則自行換行 */
+    flex-wrap: wrap;
+}
+.menu li{
+    width: 100px;
+    text-align: center;
+    border: 1px solid #000;
+}
+.menu li a{
+    display: block;
+    background-color: #00ffa2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.menu li a:hover{
+    background-color: peachpuff;
+    color: black;
+}

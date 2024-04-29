@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4</title>
+    <link rel="stylesheet" href="CH4.css">
+</head>
+<body>
+    <h1>Flex網頁排版技巧</h1>
+    <div class="container"> 
+        <!-- 外容器。外層屬性：display必備屬性, flex-flow (flex-direction決定flex軸線, 
+        flex-wrap決定換行屬性), justify-content主要軸線的對齊, align-items交錯軸線的對齊,
+        flex(flex-grow伸展比, flex-shrink收縮比, flex-basis絕對值), order排序, 
+        align-self單一物件的交錯軸對齊。 -->
+        <!-- flex會依照父層設定的值作調整，即管內元件設定的大小比父層大也不會超出父層範圍，會按比例調整
+            而且會等高，若沒有為他們設定高度的話，其中一個高度有改變，其他都會跟著一起變。 -->
+        <div class="item">1<!-- 內元件 --></div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <p></p>
+    <div class="container2">
+        <!-- 為不同item做不同的效果，display加flex可將他們並排-->
+        <div class="item0 item1">1</div>
+        <div class="item0 item2">2</div>
+        <div class="item0 item3">3</div>
+    </div>
+
+    <p></p>
+    <div class="container3">
+        <!-- 主軸從左到右，交錯軸從上到下，但可以用flex-direction去改變其方向。 
+        justify-content主軸對齊方式：
+        flex-end靠終點(右/下)、space-around等距、space-between中間空位等距 -->
+        <div class="item01">1</div>
+        <div class="item01">2</div>
+        <div class="item01">3</div>
+    </div>
+
+    <p></p>
+    <div>
+        <ul class="menu">
+            <li><a href="#">首頁</a></li>
+            <li><a href="#">政治</a></li>
+            <li><a href="#">娛樂</a></li>
+            <li><a href="#">論壇</a></li>
+            <li><a href="#">財經</a></li>
+            <li><a href="#">運動</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+/*標籤選擇器
+選擇器{
+    屬性: 設定值;
+}
+
+擬態選擇器
+HTML標籤:hover{
+}
+
+類別選擇器
+class id{
+}*/
+
+h1{
+    color: blue;
+    font-size: 25px;
+}
+h1:hover{
+    color: blueviolet;
+}
+
+h2{
+    color: red;
+}
+
+a{
+    color: pink;
+}
+a:hover{
+    color: lightskyblue;
+    font-size: 20px;
+}
+a:active{ /*按住不放*/
+    color: orange;
+}
+
+img{
+    border: 5px solid #000;
+}
+
+.style1{
+    color: gray;
+}
+
+.style2{
+    color: green;
+    font-size: 30px;
+}
+
+.testFont{
+    font-family: Verdana; 
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    text-indent: 32px;
+    /* letter-spacing: 2px; */
+    /* text-decoration: underline; */
+}
+
+.border1{
+    border: 1px solid blue;
+}
+.border2{
+    border-top: 2px solid salmon;
+    border-bottom: 2px dotted gold;
+    border-left: 5px dashed olive;
+    border-right: 5px solid sienna;
+
+}

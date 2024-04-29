@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3</title>
+    <link rel="stylesheet" href="CH3.css">
+</head>
+<body>
+    hello
+    <h1>使用CSS變更HTML熛籤特性</h1>
+    <p>當中的結構包含：容器(裝東西的東西)、網頁訯計、網頁排版。會用到DIV，就是専門設計排版的語法。
+        網頁的排版都是有關容器的設計。
+    </p>
+    <p>瀏覽器會預設一些樣式，因為擔心不是所有人都是開發者，就會有自己一套的CSS。
+        若要移除他們就會用到css reset去清除樣式，或者是自己編寫CSS去覆蓋瀏覽器預設的。</p>
+    
+    <h2>h1區塊元素的特性</h2>
+    <ul>
+        <li>預設盡可能的佔滿整個版面</li>
+        <li>區塊元素會另起一行來進行呈現</li>
+    </ul>
+    <h2>行內元素特性</h2>
+    <p>比較常用在段落裡，無法設定寬高。如果想改的話，可以用display將其換為區塊元素(bolck)，也可以把區塊元素換成行內元素(inline)。
+        如果想在段落中間更換文字樣式的話，可以加<span>span。
+        span</span>本身不代表任何意思，是排版用的行內標籤用來點綴的樣式。</p>
+    <a href="#">行內元素</a><a href="https://www.google.com" class="btn" target="_blank">Block化的連結按鈕</a>
+
+    <div class="style1">
+        <h2>也可以自製比較大的標題</h2>
+        <a href="#">div是沒有語意的，單純用來排版的標籤。</a>
+        <a href="#">為了可以讓一些元素純一使用檥式，就會需要後代選選擇器，就是把class加到div中。</a>
+        <p class="content">也可以再為div裡面的元素分class並套上樣式。</p>
+        <p>例如是這樣</p>
+    </div>
+
+    <div class="style2">
+        <a href="#">可以直接打.class去建class名字的div</a>
+        <a href="#">分開</a>
+    </div>
+
+    <div class="box">
+        <p>在reset了css之後，文字就會都密密麻麻的排在一起，這時就可以用margin去設定。</p>
+        <p>只打margin就會上下左右都會產生外邊界，若是指定方向的話可加top / bottom等去設定</p>
+        <p>border盡量不要寫height，不然文字太多會自己超出邊框。</p>
+        <p>區塊元素會盡可能的佔滿整個版面，若沒有設定其寬高，就會尋找父元素自行適應延伸佔滿。</p>
+        <h2>沒有設定的話就是會擠在一起</h2>
+        <ul>
+            <li>但是用margin的話，就每個樣式都要打一次。</li>
+            <li>此時就可以用padding讓box向內產生空白。</li>
+        </ul>
+    </div>
+
+    <div class="box2">
+        <h2>盒模型</h2>
+        <p>若有加入border、padding等元素，他整個的寬高會是原寬高加入邊界設定元素的值，但不會加入margin的數值。</p>
+        <p>也可以不設定高度，這樣就會跟據文字的大小而有變化。</p>
+    </div>
+
+    <div class="wrap">
+        <h2>水平置中的版型</h2>
+        <div class="header"></div>
+        <div class="content2">
+            <p>只要設定margin為auto他就會自動調整方塊對外產生的邊界。</p>
+            <p>但文字會靠左，所以需要自行再設定，可以用margin + padding，或是text-align。</p>
+        </div>
+        <div class="footer">
+            <p>地址：高雄市前鎮區中安路1號
+                <br>
+                tel：(07)793-9666
+            </p>    
+        </div>
+    </div>
+
+    <div class="box3">
+        <p>若不想自己計算box model的大小，則可以利用box-sizing。
+            有border-box及content-box，前者是總大小為設定值，後者是邊界的數值額外加上去。
+            <br>
+            *是所有標籤都可以吃到其樣式，before after是偽元素。
+        </p>
+    </div>
+</body>
+</html>
